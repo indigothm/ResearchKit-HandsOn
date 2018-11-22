@@ -27,6 +27,8 @@
 		A01F5E5D21A64C1800E9B2F1 /* MusicClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E5C21A64C1800E9B2F1 /* MusicClip.swift */; };
 		A01F5E5F21A64C5200E9B2F1 /* music_clips in Resources */ = {isa = PBXBuildFile; fileRef = A01F5E5E21A64C5200E9B2F1 /* music_clips */; };
 		A01F5E6121A64C7400E9B2F1 /* MusicStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6021A64C7400E9B2F1 /* MusicStep.swift */; };
+		A01F5E6321A64CFD00E9B2F1 /* MusicStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6221A64CFD00E9B2F1 /* MusicStepViewController.swift */; };
+		A01F5E6521A64D4100E9B2F1 /* MusicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6421A64D4100E9B2F1 /* MusicTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		A01F5E5C21A64C1800E9B2F1 /* MusicClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClip.swift; sourceTree = "<group>"; };
 		A01F5E5E21A64C5200E9B2F1 /* music_clips */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music_clips; sourceTree = "<group>"; };
 		A01F5E6021A64C7400E9B2F1 /* MusicStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStep.swift; sourceTree = "<group>"; };
+		A01F5E6221A64CFD00E9B2F1 /* MusicStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStepViewController.swift; sourceTree = "<group>"; };
+		A01F5E6421A64D4100E9B2F1 /* MusicTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 				A01F5E5A21A6477F00E9B2F1 /* ResultParser.swift */,
 				A01F5E5C21A64C1800E9B2F1 /* MusicClip.swift */,
 				A01F5E6021A64C7400E9B2F1 /* MusicStep.swift */,
+				A01F5E6221A64CFD00E9B2F1 /* MusicStepViewController.swift */,
+				A01F5E6421A64D4100E9B2F1 /* MusicTask.swift */,
 			);
 			path = "ResearchKit-Hands-on";
 			sourceTree = "<group>";
@@ -388,8 +394,10 @@
 				A01F5E5121A62EB500E9B2F1 /* MicrophoneTask.swift in Sources */,
 				A01F5E5921A6465200E9B2F1 /* WalkTask.swift in Sources */,
 				A01F5E4F21A6295700E9B2F1 /* SurveyTask.swift in Sources */,
+				A01F5E6321A64CFD00E9B2F1 /* MusicStepViewController.swift in Sources */,
 				A01F5E4B21A620ED00E9B2F1 /* ConsentDocument.swift in Sources */,
 				A01F5E0E21A61A4800E9B2F1 /* AppDelegate.swift in Sources */,
+				A01F5E6521A64D4100E9B2F1 /* MusicTask.swift in Sources */,
 				A01F5E5721A6336700E9B2F1 /* HealthKitManager.swift .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

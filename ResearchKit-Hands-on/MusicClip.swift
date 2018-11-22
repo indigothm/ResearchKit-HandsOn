@@ -34,6 +34,6 @@ enum MusicClip: String {
     }
     
     func fileURL() -> NSURL {
-        return NSURL(fileURLWithPath: Bundle.main.pathForResource(self.rawValue, ofType: "mp3")!)
+        return NSURL(fileURLWithPath: Bundle.main.path(forResource: self.rawValue, ofType: "mp3")!)
     }
 }

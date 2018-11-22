@@ -37,4 +37,30 @@ struct ResultParser {
         
         return urls
     }
+    
+    static func findMusicHeartFiles(result: ORKTaskResult) -> NSURL? {
+        
+        if let results = result.results, results.count > 1,
+            let heartResult = results[1] as? ORKStepResult,
+            let heartSubresults = heartResult.results, heartSubresults.count > 0,
+            let fileResult = heartSubresults[0] as? ORKFileResult,
+            let fileURL = fileResult.fileURL {
+            
+            return fileURL as NSURL
+        }
+        
+        return nil
+    }
+    
+    static func findClip(task: ORKTask?) -> MusicClip? {
+        
+        if let task = task as? ORKOrderedTask, task.steps.count > 1,
+            let musicStep = task.steps[1] as? MusicStep {
+            
+            return musicStep.clip
+            
+        } else {
+            return nil
+        }
+    }
 }
