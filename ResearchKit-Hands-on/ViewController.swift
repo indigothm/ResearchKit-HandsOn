@@ -35,6 +35,19 @@ extension ViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         //Handle results with taskViewController.result
+        HealthKitManager.stopMockHeartData()
+        if (taskViewController.task?.identifier == "WalkTask"
+            && reason == .completed) {
+            
+            let heartURLs = ResultParser.findWalkHeartFiles(result: taskViewController.result)
+            
+            for url in heartURLs {
+                do {
+                    let string = try NSString.init(contentsOf: url as URL, encoding: String.Encoding.utf8.rawValue)
+                    print(string)
+                } catch {}
+            }
+        }
         taskViewController.dismiss(animated: true, completion: nil)
     }
     
@@ -57,4 +70,17 @@ extension ViewController : ORKTaskViewControllerDelegate {
         present(taskViewController, animated: true, completion: nil)
     }
     
+    @IBAction func authorizeTapped(sender: AnyObject) {
+        HealthKitManager.authorizeHealthKit()
+    }
+    
+    @IBAction func walkTapped(sender: AnyObject) {
+        let taskViewController = ORKTaskViewController(task: WalkTask, taskRun: nil)
+        taskViewController.delegate = self
+        taskViewController.outputDirectory = NSURL(fileURLWithPath:
+            NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0],
+                                                   isDirectory: true) as URL as URL
+        present(taskViewController, animated: true, completion: nil)
+        HealthKitManager.startMockHeartData()
+    }
 }

@@ -19,27 +19,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w4v-pV-Pdg">
-                                <rect key="frame" x="146.5" y="268.5" width="82" height="130"/>
+                                <rect key="frame" x="121" y="218.5" width="133" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38P-tz-dbu">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
                                         <state key="normal" title="Consent"/>
                                         <connections>
                                             <action selector="consentTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5EV-xp-KAu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfy-5A-QDS">
-                                        <rect key="frame" x="0.0" y="50" width="82" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="133" height="30"/>
                                         <state key="normal" title="Survey"/>
                                         <connections>
                                             <action selector="surveyTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WmB-CT-i0u"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwY-Rw-U9f">
-                                        <rect key="frame" x="0.0" y="100" width="82" height="30"/>
+                                        <rect key="frame" x="0.0" y="100" width="133" height="30"/>
                                         <state key="normal" title="Microphone"/>
                                         <connections>
                                             <action selector="microphoneTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1H-IM-04Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19e-Yz-LvP">
+                                        <rect key="frame" x="0.0" y="150" width="133" height="30"/>
+                                        <state key="normal" title="HealthKit Authorize"/>
+                                        <connections>
+                                            <action selector="authorizeTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYo-79-A4H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRl-l5-oHn">
+                                        <rect key="frame" x="0.0" y="200" width="133" height="30"/>
+                                        <state key="normal" title="Walk"/>
+                                        <connections>
+                                            <action selector="walkTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Wu-wp-wbN"/>
                                         </connections>
                                     </button>
                                 </subviews>
