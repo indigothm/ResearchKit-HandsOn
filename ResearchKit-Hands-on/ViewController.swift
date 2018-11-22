@@ -65,7 +65,7 @@ extension ViewController : ORKTaskViewControllerDelegate {
         taskViewController.dismiss(animated: true, completion: nil)
     }
     
-    func taskViewController(taskViewController: ORKTaskViewController, viewControllerForStep step: ORKStep) -> ORKStepViewController? {
+    func taskViewController(_ taskViewController: ORKTaskViewController, viewControllerFor step: ORKStep) -> ORKStepViewController? {
         
         if step.identifier == "music" {
             return MusicStepViewController(step: step)
