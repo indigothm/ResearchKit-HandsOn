@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mvm-xD-4vD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Modules-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ResearchKit_Hands_on" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Modules" id="BYZ-38-t0r" customClass="ViewController" customModule="ResearchKit_Hands_on" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,9 +73,75 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Modules" id="pUt-HI-KjT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--Proof of Concept-->
+        <scene sceneID="fNr-yl-WEd">
+            <objects>
+                <viewController id="MMd-lq-VZn" customClass="ProofOfConceptViewController" customModule="ResearchKit_Hands_on" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oDH-3u-x7n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="azN-1N-Pkh">
+                                <rect key="frame" x="22" y="36" width="331" height="29"/>
+                                <segments>
+                                    <segment title="Consent"/>
+                                    <segment title="Survey"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="MMd-lq-VZn" eventType="valueChanged" id="nGy-XT-QI2"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-gb-hxg">
+                                <rect key="frame" x="136.5" y="318.5" width="102" height="30"/>
+                                <state key="normal" title="Open Selected"/>
+                                <connections>
+                                    <action selector="openSelectedDidTouch:" destination="MMd-lq-VZn" eventType="touchUpInside" id="azb-p2-Vni"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="azN-1N-Pkh" firstAttribute="top" secondItem="MCY-MS-ByH" secondAttribute="top" constant="16" id="31B-Du-dwk"/>
+                            <constraint firstItem="MCY-MS-ByH" firstAttribute="trailing" secondItem="azN-1N-Pkh" secondAttribute="trailing" constant="22" id="8dT-WY-StS"/>
+                            <constraint firstItem="1Wa-gb-hxg" firstAttribute="centerX" secondItem="oDH-3u-x7n" secondAttribute="centerX" id="a1m-ua-ujx"/>
+                            <constraint firstItem="azN-1N-Pkh" firstAttribute="leading" secondItem="MCY-MS-ByH" secondAttribute="leading" constant="22" id="ej0-LJ-NbH"/>
+                            <constraint firstItem="1Wa-gb-hxg" firstAttribute="centerY" secondItem="oDH-3u-x7n" secondAttribute="centerY" id="gFM-bC-dWg"/>
+                            <constraint firstItem="azN-1N-Pkh" firstAttribute="centerX" secondItem="oDH-3u-x7n" secondAttribute="centerX" id="lLv-Qh-AjY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MCY-MS-ByH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Proof of Concept" id="ODo-Ht-lAJ"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="azN-1N-Pkh" id="Hxh-8I-onn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yz-7c-Odr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="797"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pqZ-et-EsJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mvm-xD-4vD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gSu-RA-QGW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ea4-HB-5Vv"/>
+                        <segue destination="MMd-lq-VZn" kind="relationship" relationship="viewControllers" id="OD6-id-P7v"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrv-qy-2nQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>

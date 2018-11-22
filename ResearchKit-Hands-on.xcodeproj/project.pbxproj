@@ -29,6 +29,7 @@
 		A01F5E6121A64C7400E9B2F1 /* MusicStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6021A64C7400E9B2F1 /* MusicStep.swift */; };
 		A01F5E6321A64CFD00E9B2F1 /* MusicStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6221A64CFD00E9B2F1 /* MusicStepViewController.swift */; };
 		A01F5E6521A64D4100E9B2F1 /* MusicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6421A64D4100E9B2F1 /* MusicTask.swift */; };
+		A01F5E6721A6588C00E9B2F1 /* ProofOfConceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E6621A6588C00E9B2F1 /* ProofOfConceptViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		A01F5E6021A64C7400E9B2F1 /* MusicStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStep.swift; sourceTree = "<group>"; };
 		A01F5E6221A64CFD00E9B2F1 /* MusicStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStepViewController.swift; sourceTree = "<group>"; };
 		A01F5E6421A64D4100E9B2F1 /* MusicTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTask.swift; sourceTree = "<group>"; };
+		A01F5E6621A6588C00E9B2F1 /* ProofOfConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofOfConceptViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				A01F5E0D21A61A4800E9B2F1 /* AppDelegate.swift */,
 				A01F5E0F21A61A4800E9B2F1 /* ViewController.swift */,
 				A01F5E1121A61A4800E9B2F1 /* Main.storyboard */,
+				A01F5E6621A6588C00E9B2F1 /* ProofOfConceptViewController.swift */,
 				A01F5E1421A61A6400E9B2F1 /* Assets.xcassets */,
 				A01F5E1621A61A6400E9B2F1 /* LaunchScreen.storyboard */,
 				A01F5E1921A61A6400E9B2F1 /* Info.plist */,
@@ -389,6 +392,7 @@
 				A01F5E1021A61A4800E9B2F1 /* ViewController.swift in Sources */,
 				A01F5E5D21A64C1800E9B2F1 /* MusicClip.swift in Sources */,
 				A01F5E5B21A6477F00E9B2F1 /* ResultParser.swift in Sources */,
+				A01F5E6721A6588C00E9B2F1 /* ProofOfConceptViewController.swift in Sources */,
 				A01F5E6121A64C7400E9B2F1 /* MusicStep.swift in Sources */,
 				A01F5E4D21A621B500E9B2F1 /* ConsentTask.swift in Sources */,
 				A01F5E5121A62EB500E9B2F1 /* MicrophoneTask.swift in Sources */,
