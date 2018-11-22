@@ -14,6 +14,12 @@
 		A01F5E1821A61A6400E9B2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01F5E1621A61A6400E9B2F1 /* LaunchScreen.storyboard */; };
 		A01F5E2321A61A6400E9B2F1 /* ResearchKit_Hands_onTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E2221A61A6400E9B2F1 /* ResearchKit_Hands_onTests.swift */; };
 		A01F5E2E21A61A6500E9B2F1 /* ResearchKit_Hands_onUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E2D21A61A6500E9B2F1 /* ResearchKit_Hands_onUITests.swift */; };
+		A01F5E4521A61FFF00E9B2F1 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01F5E4221A61FEF00E9B2F1 /* ResearchKit.framework */; };
+		A01F5E4621A61FFF00E9B2F1 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A01F5E4221A61FEF00E9B2F1 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A01F5E4B21A620ED00E9B2F1 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E4A21A620ED00E9B2F1 /* ConsentDocument.swift */; };
+		A01F5E4D21A621B500E9B2F1 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E4C21A621B500E9B2F1 /* ConsentTask.swift */; };
+		A01F5E4F21A6295700E9B2F1 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E4E21A6295700E9B2F1 /* SurveyTask.swift */; };
+		A01F5E5121A62EB500E9B2F1 /* MicrophoneTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F5E5021A62EB500E9B2F1 /* MicrophoneTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,42 @@
 			remoteGlobalIDString = A01F5E0921A61A4800E9B2F1;
 			remoteInfo = "ResearchKit-Hands-on";
 		};
+		A01F5E4121A61FEF00E9B2F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01F5E3B21A61FEE00E9B2F1 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		A01F5E4321A61FEF00E9B2F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01F5E3B21A61FEE00E9B2F1 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		A01F5E4721A61FFF00E9B2F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01F5E3B21A61FEE00E9B2F1 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A01F5E4921A61FFF00E9B2F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A01F5E4621A61FFF00E9B2F1 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A01F5E0A21A61A4800E9B2F1 /* ResearchKit-Hands-on.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ResearchKit-Hands-on.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +88,11 @@
 		A01F5E2921A61A6400E9B2F1 /* ResearchKit-Hands-onUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ResearchKit-Hands-onUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01F5E2D21A61A6500E9B2F1 /* ResearchKit_Hands_onUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchKit_Hands_onUITests.swift; sourceTree = "<group>"; };
 		A01F5E2F21A61A6500E9B2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01F5E3B21A61FEE00E9B2F1 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../../../Downloads/ResearchKit-master-2/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		A01F5E4A21A620ED00E9B2F1 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		A01F5E4C21A621B500E9B2F1 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		A01F5E4E21A6295700E9B2F1 /* SurveyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		A01F5E5021A62EB500E9B2F1 /* MicrophoneTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01F5E4521A61FFF00E9B2F1 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +124,7 @@
 		A01F5E0121A61A4800E9B2F1 = {
 			isa = PBXGroup;
 			children = (
+				A01F5E3B21A61FEE00E9B2F1 /* ResearchKit.xcodeproj */,
 				A01F5E0C21A61A4800E9B2F1 /* ResearchKit-Hands-on */,
 				A01F5E2121A61A6400E9B2F1 /* ResearchKit-Hands-onTests */,
 				A01F5E2C21A61A6400E9B2F1 /* ResearchKit-Hands-onUITests */,
@@ -103,6 +151,10 @@
 				A01F5E1421A61A6400E9B2F1 /* Assets.xcassets */,
 				A01F5E1621A61A6400E9B2F1 /* LaunchScreen.storyboard */,
 				A01F5E1921A61A6400E9B2F1 /* Info.plist */,
+				A01F5E4A21A620ED00E9B2F1 /* ConsentDocument.swift */,
+				A01F5E4C21A621B500E9B2F1 /* ConsentTask.swift */,
+				A01F5E4E21A6295700E9B2F1 /* SurveyTask.swift */,
+				A01F5E5021A62EB500E9B2F1 /* MicrophoneTask.swift */,
 			);
 			path = "ResearchKit-Hands-on";
 			sourceTree = "<group>";
@@ -125,6 +177,15 @@
 			path = "ResearchKit-Hands-onUITests";
 			sourceTree = "<group>";
 		};
+		A01F5E3C21A61FEE00E9B2F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01F5E4221A61FEF00E9B2F1 /* ResearchKit.framework */,
+				A01F5E4421A61FEF00E9B2F1 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +196,12 @@
 				A01F5E0621A61A4800E9B2F1 /* Sources */,
 				A01F5E0721A61A4800E9B2F1 /* Frameworks */,
 				A01F5E0821A61A4800E9B2F1 /* Resources */,
+				A01F5E4921A61FFF00E9B2F1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A01F5E4821A61FFF00E9B2F1 /* PBXTargetDependency */,
 			);
 			name = "ResearchKit-Hands-on";
 			productName = "ResearchKit-Hands-on";
@@ -215,6 +278,12 @@
 			mainGroup = A01F5E0121A61A4800E9B2F1;
 			productRefGroup = A01F5E0B21A61A4800E9B2F1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A01F5E3C21A61FEE00E9B2F1 /* Products */;
+					ProjectRef = A01F5E3B21A61FEE00E9B2F1 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A01F5E0921A61A4800E9B2F1 /* ResearchKit-Hands-on */,
@@ -223,6 +292,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A01F5E4221A61FEF00E9B2F1 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = A01F5E4121A61FEF00E9B2F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A01F5E4421A61FEF00E9B2F1 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = A01F5E4321A61FEF00E9B2F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A01F5E0821A61A4800E9B2F1 /* Resources */ = {
@@ -257,6 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01F5E1021A61A4800E9B2F1 /* ViewController.swift in Sources */,
+				A01F5E4D21A621B500E9B2F1 /* ConsentTask.swift in Sources */,
+				A01F5E5121A62EB500E9B2F1 /* MicrophoneTask.swift in Sources */,
+				A01F5E4F21A6295700E9B2F1 /* SurveyTask.swift in Sources */,
+				A01F5E4B21A620ED00E9B2F1 /* ConsentDocument.swift in Sources */,
 				A01F5E0E21A61A4800E9B2F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = A01F5E0921A61A4800E9B2F1 /* ResearchKit-Hands-on */;
 			targetProxy = A01F5E2A21A61A6400E9B2F1 /* PBXContainerItemProxy */;
+		};
+		A01F5E4821A61FFF00E9B2F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = A01F5E4721A61FFF00E9B2F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +526,7 @@
 		A01F5E3321A61A6500E9B2F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6NDB4SY6HS;
@@ -449,6 +545,7 @@
 		A01F5E3421A61A6500E9B2F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6NDB4SY6HS;
