@@ -8,12 +8,24 @@
 
 import UIKit
 import ResearchKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        AVAudioSession.sharedInstance().requestRecordPermission () {
+            [unowned self] allowed in
+            if allowed {
+                // Microphone allowed, do what you like!
+                
+            } else {
+                // User denied microphone. Tell them off!
+                
+            }
+        }
     }
 
 
