@@ -108,7 +108,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="azN-1N-Pkh" firstAttribute="top" secondItem="MCY-MS-ByH" secondAttribute="top" constant="16" id="31B-Du-dwk"/>
-                            <constraint firstItem="MCY-MS-ByH" firstAttribute="trailing" secondItem="azN-1N-Pkh" secondAttribute="trailing" constant="22" id="8dT-WY-StS"/>
+                            <constraint firstItem="MCY-MS-ByH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="azN-1N-Pkh" secondAttribute="trailing" constant="22" id="8dT-WY-StS"/>
                             <constraint firstItem="1Wa-gb-hxg" firstAttribute="centerX" secondItem="oDH-3u-x7n" secondAttribute="centerX" id="a1m-ua-ujx"/>
                             <constraint firstItem="azN-1N-Pkh" firstAttribute="leading" secondItem="MCY-MS-ByH" secondAttribute="leading" constant="22" id="ej0-LJ-NbH"/>
                             <constraint firstItem="1Wa-gb-hxg" firstAttribute="centerY" secondItem="oDH-3u-x7n" secondAttribute="centerY" id="gFM-bC-dWg"/>

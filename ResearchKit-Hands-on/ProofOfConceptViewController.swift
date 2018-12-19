@@ -22,7 +22,7 @@ class ProofOfConceptViewController: UIViewController, ORKTaskViewControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let taskViewController1 = ORKTaskViewController(task: ConsentTaskInitialiser.createConsentTask(params: [:]), taskRun: nil)
+        let taskViewController1 = ORKTaskViewController(task: SurveyTask, taskRun: nil)
         let taskViewController2 = ORKTaskViewController(task: SurveyTask, taskRun: nil)
         collection.append(taskViewController1)
         collection.append(taskViewController2)

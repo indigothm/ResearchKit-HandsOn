@@ -26,7 +26,17 @@ class ViewController: UIViewController {
                 
             }
         }
+        
+       
     }
+    
+    /*
+    override func viewDidAppear(_ animated: Bool) {
+        let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
+        taskViewController.delegate = self
+        present(taskViewController, animated: false, completion: nil)
+    }
+    */
 
 
 }
@@ -75,9 +85,8 @@ extension ViewController : ORKTaskViewControllerDelegate {
     }
     
     @IBAction func consentTapped(sender : AnyObject) {
-        let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
-        taskViewController.delegate = self
-        present(taskViewController, animated: true, completion: nil)
+        //let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
+        present(ConsentView, animated: false, completion: nil)
     }
     
     @IBAction func surveyTapped(sender : AnyObject) {

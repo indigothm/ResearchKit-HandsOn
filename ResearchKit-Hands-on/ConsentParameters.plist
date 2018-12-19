@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>withdrawing</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>1 [TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>2 [TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>studySurvey</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>[TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>[TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>timeCommitment</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>[TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>[TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>dataUse</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>[TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>[TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>privacy</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>[TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>[TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>dataGathering</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>[TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>[TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>overview</key>
+	<dict>
+		<key>content</key>
+		<dict>
+			<key>1 [TEST] n this study you will be asked five (wait, no, three!) questions. You will also have your voice recorded for ten seconds.</key>
+			<string></string>
+		</dict>
+		<key>summary</key>
+		<dict>
+			<key>2 [TEST] If you wish to complete this study...</key>
+			<string></string>
+		</dict>
+	</dict>
+</dict>
+</plist>
